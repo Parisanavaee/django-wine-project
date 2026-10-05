@@ -1,0 +1,289 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Vermora · Reservations, trade &amp; press</title>
+  <meta name="description" content="Reach the Vermora estate — reservations, trade and export enquiries, press requests, and how to find us at kilometre 64 of Ruta 92 in the Uco Valley." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container container--wide">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> Vermora</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="vintages.html">Vintages</a>
+          <a href="estate.html">Estate</a>
+          <a href="visit.html">Visit</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+        <div class="nav-cta-row">
+          <a href="visit.html" class="btn btn--primary btn--sm">Reserve a tasting</a>
+          <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer"><span aria-hidden="true"></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <button class="drawer-close" aria-label="Close menu">Close</button>
+    <a href="index.html">Home</a>
+    <a href="vintages.html">Vintages</a>
+    <a href="estate.html">Estate</a>
+    <a href="visit.html">Visit</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- Page header -->
+    <section class="hero" style="padding-bottom: var(--space-7);">
+      <div class="container container--wide">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <span class="eyebrow"><span class="dot"></span>Write to the estate · Lucía answers most mornings</span>
+            <h1 class="hero-headline">
+              Come for a glass.<br/>
+              <em>Write</em> if it&rsquo;s <span class="gold">further off.</span>
+            </h1>
+            <p class="hero-sub">
+              Three quiet inboxes — reservations, trade, press — and a single phone that someone in the family will answer between eight and eleven, Argentina time.
+            </p>
+          </div>
+          <div class="hero-media reveal">
+            <img src="{% static 'img/estate-letter.jpg' %}" alt="A handwritten note on Vermora estate paper alongside a small glass of red wine and an envelope on a slate counter." />
+            <div class="floating-tag ft-bottom">
+              <span class="label">Reply time</span>
+              <span class="v">&lt; 24 hr</span>
+              <span class="label">EN · ES · FR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact channels -->
+    <section class="section section--bone">
+      <div class="container container--wide">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="dot"></span>Three doors, one estate</span>
+            <h2>Pick the door that <span class="serif-em">matches the question.</span></h2>
+          </div>
+          <p>Reservations go to Camila. Trade and export go to Federico. Press goes to Lucía. We will pass it along if you choose the wrong door.</p>
+        </div>
+
+        <div class="vintages-grid">
+
+          <article class="vintage-card reveal">
+            <div class="body" style="padding: var(--space-6);">
+              <span class="mono-cap">Reservations · 01</span>
+              <h4 style="margin-top: 8px;">Camila Ortega</h4>
+              <p>Tasting room bookings, Sunday long table, harvest day, private events for up to thirty.</p>
+              <ul style="margin: var(--space-4) 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                <li class="mono-num" style="font-size: var(--text-sm); color: var(--ink);">camila&#64;vermora.example</li>
+                <li class="mono-num" style="font-size: var(--text-sm); color: var(--ink-mute);">+54 261 555 8400 · 08–11 ART</li>
+              </ul>
+              <a href="visit.html#booking" class="link-arrow" style="margin-top: var(--space-4);">Reservation form <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="vintage-card reveal">
+            <div class="body" style="padding: var(--space-6);">
+              <span class="mono-cap">Trade &amp; export · 02</span>
+              <h4 style="margin-top: 8px;">Federico Vermora</h4>
+              <p>Restaurant and retail allocations, importers, distributors and direct-to-trade. We currently export to seven countries.</p>
+              <ul style="margin: var(--space-4) 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                <li class="mono-num" style="font-size: var(--text-sm); color: var(--ink);">trade&#64;vermora.example</li>
+                <li class="mono-num" style="font-size: var(--text-sm); color: var(--ink-mute);">+54 261 555 8401</li>
+              </ul>
+              <a href="#trade-form" class="link-arrow" style="margin-top: var(--space-4);">Trade enquiry <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="vintage-card is-reserve reveal">
+            <div class="body" style="padding: var(--space-6);">
+              <span class="mono-cap" style="color: var(--orange-soft);">Press &amp; editorial · 03</span>
+              <h4 style="margin-top: 8px;">Lucía Vermora</h4>
+              <p>Press requests, editorial shoots, interviews, tasting samples for critics, sommelier visits.</p>
+              <ul style="margin: var(--space-4) 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                <li class="mono-num" style="font-size: var(--text-sm); color: var(--orange);">press&#64;vermora.example</li>
+                <li class="mono-num" style="font-size: var(--text-sm); color: var(--orange-soft);">Replies on Wed &amp; Fri</li>
+              </ul>
+              <a href="#press" class="link-arrow" style="color: var(--orange); border-color: var(--orange); margin-top: var(--space-4);">Press kit <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- General intake form -->
+    <section class="section section--paper" id="trade-form">
+      <div class="container container--wide">
+        <div class="split-image">
+          <div class="body">
+            <span class="eyebrow"><span class="dot"></span>General enquiries</span>
+            <h2>Tell us what you are <span class="serif-em">writing about.</span></h2>
+            <p>One form for everything that is not a reservation. Camila will route it to the right person and you will hear back within twenty-four hours.</p>
+
+            <form class="booking-card" style="margin-top: var(--space-5);" novalidate>
+              <div class="row">
+                <label>Full name<input type="text" name="name" placeholder="Maria del Carmen Ortiz" required /></label>
+                <label>Email<input type="email" name="email" placeholder="you@example.com" required /></label>
+              </div>
+              <div class="row">
+                <label>Company / publication<input type="text" name="org" placeholder="Optional" /></label>
+                <label>Subject
+                  <select name="subject">
+                    <option>Trade / restaurant / retail</option>
+                    <option>Export &amp; distribution</option>
+                    <option>Allocation request</option>
+                    <option>Press &amp; editorial</option>
+                    <option>Private event for 10+</option>
+                    <option>Something else</option>
+                  </select>
+                </label>
+              </div>
+              <div class="row">
+                <label>Country
+                  <select name="country">
+                    <option>Argentina</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>France</option>
+                    <option>Japan</option>
+                    <option>Brazil</option>
+                    <option>Australia</option>
+                    <option>Other / multiple</option>
+                  </select>
+                </label>
+                <label>How did you hear about us?
+                  <select name="source">
+                    <option>Sommelier / restaurant</option>
+                    <option>Vinous / Decanter / press</option>
+                    <option>A friend</option>
+                    <option>Search</option>
+                    <option>Social</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+              </div>
+              <label>Your note<textarea name="notes" placeholder="We run a small wine list in Lisbon and would love to see your portfolio."></textarea></label>
+              <div class="actions">
+                <span class="mono-cap">We reply within 24 hr</span>
+                <button type="submit" class="btn btn--primary">Send the note
+                  <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="body">
+            <span class="eyebrow"><span class="dot"></span>Find us · the long dirt road</span>
+            <h2>RR 92 · KM 64 · <span class="serif-em">Uco Valley.</span></h2>
+            <p>From central Mendoza it is about one hour twenty by car — south on Ruta 40, west on Ruta 92, and then a long dirt road. The gate has the family monogram on the iron handle. The dogs will hear you before we do.</p>
+
+            <dl class="facts-list">
+              <div><dt>From Mendoza city</dt><dd>1 hr 20 min</dd></div>
+              <div><dt>From the airport</dt><dd>1 hr 40 min</dd></div>
+              <div><dt>Coordinates</dt><dd>-33.41 · -69.18</dd></div>
+              <div><dt>Open</dt><dd>Tue → Sun (Oct → Apr)</dd></div>
+            </dl>
+
+            <figure style="margin-top: var(--space-5); border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4 / 3;">
+              <img src="{% static 'img/estate-aerial.jpg' %}" alt="An aerial view of the Vermora estate at golden hour, showing the cellar, kitchen, terrace and eighteen hectares of vines stretching toward the Andes." style="width: 100%; height: 100%; object-fit: cover;" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Press kit -->
+    <section class="section section--ink section--deep" id="press">
+      <div class="container container--wide">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow on-dark"><span class="dot"></span>Press kit · last updated April 2026</span>
+            <h2 style="color: var(--bone);">For writers, critics &amp; <span class="serif-em" style="color: var(--orange);">photographers.</span></h2>
+          </div>
+          <p style="color: rgba(247,239,224,0.78);">High-resolution photography of the estate, the family and the wines. A short bio, the printed sommelier sheet and a recent press summary. All free for editorial use with credit.</p>
+        </div>
+
+        <div class="vintages-grid">
+          <article class="vintage-card is-reserve reveal">
+            <div class="body" style="padding: var(--space-6);">
+              <span class="mono-cap" style="color: var(--orange-soft);">Photography · 38 files</span>
+              <h4 style="margin-top: 8px; color: var(--bone);">Estate &amp; family pack</h4>
+              <p style="color: rgba(247,239,224,0.85);">Thirty-eight high-resolution photographs of the estate, the cellar, the family at the long table, and the four current-release wines. Free for editorial use.</p>
+              <a href="#" class="link-arrow" style="margin-top: var(--space-4); color: var(--orange); border-color: var(--orange);">Download (180 MB) <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="vintage-card is-reserve reveal">
+            <div class="body" style="padding: var(--space-6);">
+              <span class="mono-cap" style="color: var(--orange-soft);">Trade sheet · 1 page</span>
+              <h4 style="margin-top: 8px; color: var(--bone);">Sommelier sheet · 2026 release</h4>
+              <p style="color: rgba(247,239,224,0.85);">Tasting notes, pH, TA, RS, élevage and pairings for the four wines in the current release. Updated every spring at the new release.</p>
+              <a href="#" class="link-arrow" style="margin-top: var(--space-4); color: var(--orange); border-color: var(--orange);">Download (.pdf) <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="vintage-card is-reserve reveal">
+            <div class="body" style="padding: var(--space-6);">
+              <span class="mono-cap" style="color: var(--orange-soft);">Press summary · 2018 → 2026</span>
+              <h4 style="margin-top: 8px; color: var(--bone);">Critic scores &amp; reviews</h4>
+              <p style="color: rgba(247,239,224,0.85);">Selected reviews and scores from Vinous, Decanter, Wine Advocate, Le Figaro, Saveur and the Argentine Wine Awards.</p>
+              <a href="#" class="link-arrow" style="margin-top: var(--space-4); color: var(--orange); border-color: var(--orange);">Open (.pdf) <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> Vermora</a>
+          <p>A five-generation family estate in the foothills of the Andes. Eighteen hectares of vines and a single long table. Open by reservation, October through April.</p>
+          <span class="mono-cap" style="color: var(--orange); margin-top: var(--space-3);">RR 92 · KM 64 · Uco Valley · Argentina</span>
+        </div>
+        <div class="footer-col"><h5>The cellar</h5><ul>
+          <li><a href="vintages.html">Current release</a></li>
+          <li><a href="vintages.html">Library wines</a></li>
+          <li><a href="vintages.html">Long-table case</a></li>
+          <li><a href="vintages.html">Sommelier sheet</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>The estate</h5><ul>
+          <li><a href="estate.html">Our story</a></li>
+          <li><a href="estate.html">The land</a></li>
+          <li><a href="estate.html">The family</a></li>
+          <li><a href="estate.html">Sustainability</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Visit</h5><ul>
+          <li><a href="visit.html">Terrace flight</a></li>
+          <li><a href="visit.html">Cellar dinner</a></li>
+          <li><a href="visit.html">Harvest day</a></li>
+          <li><a href="contact.html">Contact &amp; press</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-legal">
+        <span>© 1898 — 2026 Vermora Estate. Drink responsibly.</span>
+        <span><a href="#">Privacy</a> · <a href="#">Shipping &amp; returns</a> · <a href="#">Trade &amp; export</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'js/main.js' %}" defer></script>
+</body>
+</html>

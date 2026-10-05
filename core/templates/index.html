@@ -1,0 +1,501 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vermora — Boutique Winery &amp; Estate HTML Template</title>
+  <meta name="description" content="Vermora is a free modern HTML template for boutique wineries, vineyards, and fine-hospitality estates — bone and bright-orange palette, Bricolage Grotesque display, five fully responsive pages. No framework, no build step." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container container--wide">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> Vermora</a>
+        <div class="nav-links" role="navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="vintages.html">Vintages</a>
+          <a href="estate.html">Estate</a>
+          <a href="visit.html">Visit</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-cta-row">
+          <a href="visit.html" class="btn btn--primary btn--sm">Reserve a tasting
+            <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer"><span aria-hidden="true"></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <button class="drawer-close" aria-label="Close menu">Close</button>
+    <a href="index.html">Home</a>
+    <a href="vintages.html">Vintages</a>
+    <a href="estate.html">Estate</a>
+    <a href="visit.html">Visit</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container container--wide">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Mendoza · Uco Valley · est. 1898</span>
+            <h1 class="hero-headline">
+              Wines made for the <em>long</em><br/>
+              <span class="gold">table,</span> not the <em>shelf.</em>
+            </h1>
+            <p class="hero-sub">
+              Vermora is a five-generation family estate at 1,180 metres in the foothills of the Andes. Eighteen hectares, four varietals, one rule we have kept since 1898 — no shortcut survives the harvest.
+            </p>
+            <div class="hero-cta-row">
+              <a class="btn btn--primary btn--lg" href="visit.html">Reserve a tasting
+                <svg class="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="btn btn--ghost btn--lg" href="vintages.html">See the cellar</a>
+            </div>
+            <div class="hero-meta">
+              <span class="stars" aria-label="97 of 100">★★★★★</span>
+              <span><strong>97</strong> · Vinous, 2024</span>
+              <span aria-hidden="true">·</span>
+              <span><strong>5</strong> generations</span>
+              <span aria-hidden="true">·</span>
+              <span><strong>18</strong> hectares</span>
+            </div>
+          </div>
+          <div class="hero-media reveal">
+            <img src="{% static 'img/hero-bottle.jpg' %}" alt="A bottle of Vermora Reserva Malbec on a sunlit estate table, deep burgundy glass and a wax-sealed cork against warm linen." />
+            <div class="floating-tag ft-top">
+              <span class="pill">2021</span>
+              Reserva Malbec
+            </div>
+            <div class="floating-tag ft-bottom">
+              <span class="label">Critic score</span>
+              <span class="v">97 / 100</span>
+              <span class="label">Vinous · Antonio Galloni</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="vintage-strip">
+          <div><span class="v">1,180m</span><span class="l">Elevation</span></div>
+          <div><span class="v">18 ha</span><span class="l">Estate vines</span></div>
+          <div><span class="v">42 yr</span><span class="l">Oldest block</span></div>
+          <div><span class="v">12,400</span><span class="l">Bottles a year</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial intro -->
+    <section class="section section--paper">
+      <div class="container container--wide">
+        <div class="rule-row orange">Chapter 01 · An estate, not a brand</div>
+        <div class="editorial" style="margin-top: var(--space-6);">
+          <aside class="editorial-aside">
+            <span class="number">01</span>
+            <span class="mono-cap">From the cellar journal · April</span>
+            <p class="text-mute" style="max-width: 28ch;">
+              The 2021 was bottled on a Tuesday in the rain. The 2022 will sit on French oak through next harvest. The 2023 is still in concrete — quieter than the last one, more patient.
+            </p>
+          </aside>
+          <div class="editorial-body">
+            <p class="lede">
+              We are a small estate. Eighteen hectares of vines, three of olive, one of figs and a long row of rosemary that runs the length of the eastern fence. Everything here is in earshot of the kitchen.
+            </p>
+            <p>
+              Vermora was planted in 1898 by Olivia and Tomás Vermora, who arrived from a flooded valley in Piedmont with two suitcases, a bag of cuttings and the conviction that the soil under the Tupungato volcano would forgive the journey. It did. The first vintage they bottled was 1903 — a thin, bright field blend that they served at the local fonda and never sold.
+            </p>
+            <p>
+              Five generations later we have not changed very much. The cellar is still inside the original stone wall. The harvest still ends with a Sunday lunch that runs until the candles burn down. We bottle twelve and a half thousand bottles a year — sometimes fewer, never many more.
+            </p>
+            <div class="pull-quote">
+              &ldquo;The estate has the rare confidence to do less of everything — fewer barrels, fewer bottles, fewer vintages. The Reserva 2021 is the most articulate Malbec we tasted from Mendoza this year.&rdquo;
+              <cite>Antonio Galloni · Vinous · January 2024</cite>
+            </div>
+            <p>
+              If you would like to sit on the western terrace before lunch and taste through the lineup, our cellar is open from October to April, Tuesday through Saturday, by reservation. The number is on the contact page. Lucía answers most mornings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vintage lineup -->
+    <section class="section section--bone">
+      <div class="container container--wide">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="dot"></span>The cellar · 04 of 12 in current release</span>
+            <h2>Four wines from <span class="serif-em">one estate.</span></h2>
+          </div>
+          <p>Three reds and a single white — bottled only in years the harvest deserves them. Everything below is in the current release; older vintages live on the <a href="vintages.html" class="link-arrow" style="display: inline; padding: 0; border: 0; text-transform: none; letter-spacing: 0; font-family: inherit; color: var(--orange);">vintages page</a>.</p>
+        </div>
+
+        <div class="vintages-grid">
+
+          <article class="vintage-card reveal">
+            <div class="photo">
+              <img src="{% static 'img/wine-malbec.jpg' %}" alt="A glass of Vermora Estate Malbec, deep ruby-violet against the burgundy estate wall." />
+              <span class="year-pill">2022</span>
+            </div>
+            <div class="body">
+              <div class="meta">
+                <span>Estate Malbec</span>
+                <span>14.2% · 750ml</span>
+              </div>
+              <h4>Vermora Malbec <span class="serif-em">2022</span></h4>
+              <p>From the lower terrace, fermented in concrete egg, six months on neutral French oak. Plum, violet, a long thread of graphite.</p>
+              <div class="notes">
+                <span class="note">plum</span>
+                <span class="note">violet</span>
+                <span class="note">graphite</span>
+                <span class="note">tobacco</span>
+              </div>
+              <div class="price-row">
+                <span class="price">$48 <sub>USD</sub></span>
+                <a href="vintages.html" class="link-arrow">Tasting note <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="vintage-card is-reserve reveal">
+            <div class="photo">
+              <img src="{% static 'img/wine-reserva.jpg' %}" alt="The Vermora Reserva bottle — wax-sealed, hand-numbered, photographed on linen with a pair of antique scissors." />
+              <span class="year-pill">2021</span>
+            </div>
+            <div class="body">
+              <div class="meta">
+                <span>Reserva Malbec</span>
+                <span>14.4% · 1,420 bottles</span>
+              </div>
+              <h4>Vermora Reserva <span class="serif-em">2021</span></h4>
+              <p>Eighteen months in French oak from the 1947 block — the oldest vines on the estate. Scored 97 by Vinous and 95 by Decanter. Numbered by hand.</p>
+              <div class="notes">
+                <span class="note">black cherry</span>
+                <span class="note">cocoa</span>
+                <span class="note">cedar</span>
+                <span class="note">leather</span>
+              </div>
+              <div class="price-row">
+                <span class="price">$148 <sub>USD</sub></span>
+                <a href="vintages.html" class="link-arrow" style="color: var(--orange); border-color: var(--orange);">Cellar copy <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="vintage-card reveal">
+            <div class="photo">
+              <img src="{% static 'img/wine-cabernet.jpg' %}" alt="Vermora Cabernet Franc — a single glass on the slate counter of the tasting room." />
+              <span class="year-pill">2022</span>
+            </div>
+            <div class="body">
+              <div class="meta">
+                <span>Cabernet Franc</span>
+                <span>13.6% · 750ml</span>
+              </div>
+              <h4>Vermora Franc <span class="serif-em">2022</span></h4>
+              <p>From the cooler upper block, picked early. Bright, savoury, almost pinot-like in its restraint. Designed for the long table.</p>
+              <div class="notes">
+                <span class="note">redcurrant</span>
+                <span class="note">bell pepper</span>
+                <span class="note">graphite</span>
+                <span class="note">bay</span>
+              </div>
+              <div class="price-row">
+                <span class="price">$58 <sub>USD</sub></span>
+                <a href="vintages.html" class="link-arrow">Tasting note <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="vintage-card reveal">
+            <div class="photo">
+              <img src="{% static 'img/wine-chardonnay.jpg' %}" alt="Vermora estate Chardonnay — a pale gold glass against the cellar wall." />
+              <span class="year-pill">2023</span>
+            </div>
+            <div class="body">
+              <div class="meta">
+                <span>Estate Chardonnay</span>
+                <span>13.1% · 980 bottles</span>
+              </div>
+              <h4>Vermora Blanco <span class="serif-em">2023</span></h4>
+              <p>Less than a thousand bottles. Forty per cent barrel-fermented in old French oak. Citrus blossom, river stone, a long flinty finish.</p>
+              <div class="notes">
+                <span class="note">citrus blossom</span>
+                <span class="note">flint</span>
+                <span class="note">apple</span>
+                <span class="note">salt</span>
+              </div>
+              <div class="price-row">
+                <span class="price">$54 <sub>USD</sub></span>
+                <a href="vintages.html" class="link-arrow">Tasting note <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="vintage-card reveal" style="grid-column: span 2;">
+            <div class="photo" style="aspect-ratio: 16 / 9;">
+              <img src="{% static 'img/wine-pairing.jpg' %}" alt="A long estate lunch — a roast lamb, a half-finished bottle, three glasses, candlelight on a linen runner." />
+              <span class="year-pill">Mixed case</span>
+            </div>
+            <div class="body" style="display: grid; grid-template-columns: 1fr auto; align-items: center; gap: var(--space-5);">
+              <div>
+                <div class="meta" style="justify-content: flex-start; gap: var(--space-4);">
+                  <span>Long table case</span>
+                  <span>·</span>
+                  <span>3 Malbec · 2 Franc · 1 Blanco</span>
+                </div>
+                <h4 style="margin-top: 8px;">A case for the <span class="serif-em">long table.</span></h4>
+                <p style="max-width: 50ch; margin-top: 8px;">Six bottles chosen for a meal that runs to candlelight. Includes a printed tasting note from Lucía and the recipe for our estate slow-roast lamb.</p>
+              </div>
+              <div style="text-align: right;">
+                <div class="price" style="font-size: 2.5rem;">$298</div>
+                <a href="vintages.html" class="btn btn--primary btn--sm" style="margin-top: 12px;">Order the case
+                  <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiences / visits -->
+    <section class="section section--ink">
+      <div class="container container--wide">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow on-dark"><span class="dot"></span>Tasting room · open Oct → Apr</span>
+            <h2 style="color: var(--bone);">Three ways to <span class="serif-em" style="color: var(--orange);">visit the estate.</span></h2>
+          </div>
+          <p style="color: rgba(247,239,224,0.78);">From a one-hour tasting on the western terrace to a private cellar dinner with the winemaker. Each experience is led by a member of the family and built around the wines.</p>
+        </div>
+
+        <div class="experiences">
+
+          <article class="exp-tile is-tall">
+            <img class="bg" src="{% static 'img/exp-cellar.jpg' %}" alt="The Vermora cellar at dusk — French oak barrels stacked under low warm light, a small wooden table set for two." />
+            <span class="mono">Signature · 3 hr</span>
+            <h3>Cellar dinner with the winemaker</h3>
+            <p>A four-course dinner inside the original 1898 cellar, paired through six wines including a vertical of three Reservas. Limited to ten seats a night, three nights a week.</p>
+            <div class="row">
+              <span class="price">$285 <span style="font-size: 0.6em; color: var(--orange-soft); font-family: var(--font-mono); letter-spacing: 0.16em;">per guest</span></span>
+              <a href="visit.html" class="link-arrow" style="color: var(--orange); border-color: var(--orange);">Reserve a table <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="exp-tile is-wide">
+            <img class="bg" src="{% static 'img/exp-terrace.jpg' %}" alt="A long shaded terrace with linen-covered tables overlooking the Andes — late afternoon light on the vines." />
+            <span class="mono">Open tasting · 75 min</span>
+            <h3>Terrace flight · five wines</h3>
+            <p>Through the current release on the western terrace, with a board of estate olive oil, cured meats and local cheese.</p>
+            <div class="row">
+              <span class="price">$58</span>
+              <a href="visit.html" class="link-arrow" style="color: var(--orange); border-color: var(--orange);">Reserve</a>
+            </div>
+          </article>
+
+          <article class="exp-tile">
+            <img class="bg" src="{% static 'img/exp-vineyard.jpg' %}" alt="A vineyard worker walking between rows of low-trained Malbec vines, late afternoon, the Andes in the distance." />
+            <span class="mono">Harvest day · February</span>
+            <h3>Pick &amp; press · harvest day</h3>
+            <p>One day on the estate at the height of the harvest. Pick at first light, press by lunch, taste the result by evening.</p>
+            <div class="row">
+              <span class="price">$420</span>
+              <a href="visit.html" class="link-arrow" style="color: var(--orange); border-color: var(--orange);">Join</a>
+            </div>
+          </article>
+
+          <article class="exp-tile">
+            <img class="bg" src="{% static 'img/exp-table.jpg' %}" alt="A sunlit long lunch table set for ten under a wisteria arbour at the Vermora estate." />
+            <span class="mono">Sunday only · 4 hr</span>
+            <h3>The Sunday long table</h3>
+            <p>A communal three-course lunch under the wisteria — paired through the whole current release. Ten seats, one seating, Sundays from October.</p>
+            <div class="row">
+              <span class="price">$165</span>
+              <a href="visit.html" class="link-arrow" style="color: var(--orange); border-color: var(--orange);">Book a seat</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Press strip -->
+    <section class="section section--bone section--tight">
+      <div class="container container--wide">
+        <div class="press-strip">
+          <div>
+            <span class="mono-cap">In the press</span>
+            <p class="quote">A small Mendoza estate quietly making some of the most articulate Malbec in Argentina.</p>
+            <cite>Decanter · 2024</cite>
+          </div>
+          <div class="press-logos">
+            <span>Vinous</span>
+            <span>Decanter</span>
+            <span>Wine Advocate</span>
+            <span>Le Figaro</span>
+            <span>Saveur</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estate split -->
+    <section class="section section--paper section--deep">
+      <div class="container container--wide">
+        <div class="rule-row orange" style="margin-bottom: var(--space-7);">Chapter 02 · The estate</div>
+
+        <div class="split-image">
+          <figure>
+            <img src="{% static 'img/estate-vines.jpg' %}" alt="Vermora vines in golden-hour light — low-trained Malbec on the lower terrace with the Andes behind." />
+            <figcaption>Lower terrace · 1,180m</figcaption>
+          </figure>
+          <div class="body">
+            <span class="eyebrow"><span class="dot"></span>The land</span>
+            <h2>1,180 metres, four soils, <span class="serif-em">no rain in February.</span></h2>
+            <p>The estate sits on a south-facing fan above the Tupungato volcano. The lower terrace is alluvial — river stones and a thin sand cap. The upper block is calcareous clay over a deep limestone shelf. The two together give us a Malbec that is dense at the front and bright at the finish.</p>
+            <p>February is dry. The fruit ripens in long, cool days and the diurnal swing — sometimes 22°C — keeps the acidity alive. We pick by hand, in 14kg crates, between five and nine in the morning.</p>
+            <dl class="facts-list">
+              <div><dt>Soils</dt><dd>Alluvial · clay · limestone</dd></div>
+              <div><dt>Aspect</dt><dd>South · 4° slope</dd></div>
+              <div><dt>Diurnal swing</dt><dd>up to 22°C</dd></div>
+              <div><dt>Annual rainfall</dt><dd>284mm</dd></div>
+            </dl>
+            <div style="margin-top: var(--space-5);"><a href="estate.html" class="btn btn--ghost">Read the estate journal <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+          </div>
+        </div>
+
+        <div class="divider-mark"><span>•  Five generations  •</span></div>
+
+        <div class="split-image is-reversed">
+          <figure>
+            <img src="{% static 'img/estate-family.jpg' %}" alt="Lucía and her grandmother walking the harvest rows at first light — two women in linen against the Andes." />
+            <figcaption>Lucía &amp; Elena · harvest 2024</figcaption>
+          </figure>
+          <div class="body">
+            <span class="eyebrow"><span class="dot"></span>The family</span>
+            <h2>Five generations, <span class="serif-em">one long lunch.</span></h2>
+            <p>Lucía Vermora is the fifth generation. She studied oenology in Burgundy, came back in 2017, and quietly began the slow work of de-tooling the cellar — replacing new oak with old, retiring the largest tanks, returning the entry-level Malbec to concrete.</p>
+            <p>The decisions she has made since are small and visible only in the glass. The wines are quieter now. The 2021 was the first vintage that felt like the estate had stopped trying to impress anyone.</p>
+            <div style="margin-top: var(--space-5);"><a href="estate.html" class="btn btn--ghost">Meet the family <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal -->
+    <section class="section section--bone">
+      <div class="container container--wide">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="dot"></span>From the cellar journal</span>
+            <h2>Three short notes <span class="serif-em">from this season.</span></h2>
+          </div>
+          <p>Lucía writes a short note from the cellar every two or three weeks. Quiet, specific, occasionally about the weather. You can subscribe at the bottom of the page.</p>
+        </div>
+
+        <div class="journal-grid">
+
+          <article class="journal-card reveal">
+            <div class="photo"><img src="{% static 'img/journal-pruning.jpg' %}" alt="Hands pruning a vine in winter sunlight, secateurs and a leather glove." /></div>
+            <div class="meta"><span>Note · 04</span><span>·</span><span>July 2026</span></div>
+            <h4>Why we pruned the upper block by hand again this winter</h4>
+            <p>A mechanical pre-pruner went over the rows in 2018. We have spent six winters undoing what it taught the canopy.</p>
+            <a href="estate.html" class="link-arrow">Read the note <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+
+          <article class="journal-card reveal">
+            <div class="photo"><img src="{% static 'img/journal-cellar.jpg' %}" alt="An old French oak barrel marked with a chalk vintage stamp 2023 in the dim cellar." /></div>
+            <div class="meta"><span>Note · 03</span><span>·</span><span>May 2026</span></div>
+            <h4>The 2023 Blanco is the quietest white we have ever bottled</h4>
+            <p>Forty per cent in old wood, sixty in concrete. We bottled 980 of them. They taste of river stone and citrus blossom and almost nothing else.</p>
+            <a href="estate.html" class="link-arrow">Read the note <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+
+          <article class="journal-card reveal">
+            <div class="photo"><img src="{% static 'img/journal-harvest.jpg' %}" alt="Workers in linen and straw hats picking Malbec at first light, the Andes faintly violet in the distance." /></div>
+            <div class="meta"><span>Note · 02</span><span>·</span><span>March 2026</span></div>
+            <h4>Harvest 2026 — three short days of perfect weather</h4>
+            <p>We picked the upper block on the 6th, the lower on the 8th, and the Franc on the 11th. The fruit is dense and the skins are thick. We are quietly hopeful.</p>
+            <a href="estate.html" class="link-arrow">Read the note <svg width="12" height="8" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section section--ink section--deep">
+      <div class="container container--narrow" style="text-align: center;">
+        <span class="eyebrow on-dark" style="justify-content: center;"><span class="dot"></span>The cellar is open</span>
+        <h2 style="font-size: var(--text-5xl); color: var(--bone); margin-top: 18px;">Come for a glass.<br/><span class="serif-em" style="color: var(--orange);">Stay for the long table.</span></h2>
+        <p style="color: rgba(247,239,224,0.78); font-size: var(--text-lg); max-width: 56ch; margin: var(--space-5) auto 0;">
+          We open the tasting room from October to April, Tuesday through Saturday, by reservation only. Lucía answers the phone most mornings.
+        </p>
+        <div class="hero-cta-row" style="justify-content: center; margin-top: var(--space-6);">
+          <a class="btn btn--primary btn--lg" href="visit.html">Reserve a tasting
+            <svg class="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--outline-orange btn--lg" href="contact.html">Write to the estate</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> Vermora</a>
+          <p>A five-generation family estate in the foothills of the Andes. Eighteen hectares of vines and a single long table. Open by reservation, October through April.</p>
+          <span class="mono-cap" style="color: var(--orange); margin-top: var(--space-3);">RR 92 · KM 64 · Uco Valley · Argentina</span>
+        </div>
+        <div class="footer-col">
+          <h5>The cellar</h5>
+          <ul>
+            <li><a href="vintages.html">Current release</a></li>
+            <li><a href="vintages.html">Library wines</a></li>
+            <li><a href="vintages.html">Long-table case</a></li>
+            <li><a href="vintages.html">Sommelier sheet</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>The estate</h5>
+          <ul>
+            <li><a href="estate.html">Our story</a></li>
+            <li><a href="estate.html">The land</a></li>
+            <li><a href="estate.html">The family</a></li>
+            <li><a href="estate.html">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Visit</h5>
+          <ul>
+            <li><a href="visit.html">Terrace flight</a></li>
+            <li><a href="visit.html">Cellar dinner</a></li>
+            <li><a href="visit.html">Harvest day</a></li>
+            <li><a href="contact.html">Contact &amp; press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>© 1898 — 2026 Vermora Estate. Drink responsibly.</span>
+        <span><a href="#">Privacy</a> · <a href="#">Shipping &amp; returns</a> · <a href="#">Trade &amp; export</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'js/main.js' %}" defer></script>
+</body>
+</html>
